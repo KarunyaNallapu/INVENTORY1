@@ -2,10 +2,11 @@
   <div>
     <div class="modal-header">
       <h4 class="modal-title" id="add-modal-label">Delete Inventory</h4>
-
+      <!--Button to close the delete form-->
       <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="onClose()"><span
           aria-hidden="true">&times;</span></button>
     </div>
+    <!--Modal form to delete inventory-->
     <div class="modal-body">
       <div class="form-group">
         <label class="col-sm-12 control-label">Are you sure to delete following Inventory?</label>
@@ -13,10 +14,13 @@
           <h3 style="color:blue;">{{title}}</h3>
         </div>
       </div>
+      <!--Buttons to delete and close-->
       <div class="form-group">
         <label class="col-sm-2 control-label"></label>
         <div class="col-sm-10">
+          <!--Button to close the form-->
           <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onClose()">Close</button>
+          <!--Button to delete the inventory-->
           <button type="submit" class="btn btn-primary" (click)="deletePost(postId)" style="margin:5px;">Delete</button>
         </div>
       </div>

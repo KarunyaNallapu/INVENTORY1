@@ -11,6 +11,7 @@ import swal from 'sweetalert2';
 })
 export class InventoryAddComponent implements OnInit {
 
+  /** Variables use for adding inventory */
   addNewPostForm = this.builder.group({
     id: ['', Validators.required],
     name: ['', Validators.required],
@@ -36,9 +37,10 @@ export class InventoryAddComponent implements OnInit {
   get f(){
     return this.addNewPostForm.controls;
   }
-
+  /** Calling api to submit the details */
   onPostFormSubmit(){
     this.submitted=true;
+    /** If the form is valid api is called here amd swal is fired and then data is added and updated*/
     if (this.addNewPostForm.valid) {
       this.dataService.addInventory(this.addNewPostForm.value).subscribe(data=>{
         console.log(data);
@@ -56,6 +58,7 @@ export class InventoryAddComponent implements OnInit {
       });
       
     } 
+    /**If form is invalid the below swal is fired */
     else {
       swal.fire({
         title: 'Add Inventory',
@@ -68,7 +71,7 @@ export class InventoryAddComponent implements OnInit {
     }
   
   }
-
+  /**Closing the modal on close */
   onClose(){
     this.bsModalRef.hide();
   }

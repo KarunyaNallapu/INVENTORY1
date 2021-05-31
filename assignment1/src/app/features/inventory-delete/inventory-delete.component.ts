@@ -9,6 +9,7 @@ import swal from 'sweetalert2';
   styleUrls: ['./inventory-delete.component.scss']
 })
 export class InventoryDeleteComponent implements OnInit {
+    /** Variables use for adding inventory */
   postId: any;
   title: any;
   event: EventEmitter<any> = new EventEmitter();
@@ -20,8 +21,9 @@ export class InventoryDeleteComponent implements OnInit {
   ngOnInit() {
 
   }
-
+/** Calling api to submit the id and delete the inventory */
   deletePost(del: number) {
+    /** If api is called is success swal is fired and then data is deleted*/
     if (this.postId != null || undefined) {
       this.dataService.deleteInventory(del).subscribe();
       swal.fire({
@@ -34,7 +36,9 @@ export class InventoryDeleteComponent implements OnInit {
       this.event.emit('OK');
       this.bsModalRef.hide();
       
-    } else {
+    } 
+    /**If api fails the below swal is fired */
+    else {
       swal.fire({
         title: 'Delete Inventory',
         text: 'Deleting Inventory Failed',
@@ -46,7 +50,7 @@ export class InventoryDeleteComponent implements OnInit {
     }
 
   }
-
+  /**Closing the modal on close */
   onClose() {
     this.bsModalRef.hide();
 

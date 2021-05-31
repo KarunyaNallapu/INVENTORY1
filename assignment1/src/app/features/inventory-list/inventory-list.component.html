@@ -2,14 +2,17 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12" style="text-align:center;">
+      <!--Project header-->
       <h3>Inventory</h3>
     </div>
   </div>
   <div class="row">
     <div class="col-md-12">
+      <!--Button to add new inventory-->
       <span (click)="addNewPost()" class="btn btn-primary btn-xs">Add New Inventory</span>
       <br /><br />
       <div class="table-responsive">
+        <!--Table showing all the details of the inventory list-->
         <table id="mytable" class="table table-bordred table-striped">
           <thead>
             <th>ID</th>
@@ -42,6 +45,7 @@
             </tr>
           </tbody>
         </table>
+        <!--Showing the details of theinventory with pagination-->
         <div class="paginate">
           <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
         </div>

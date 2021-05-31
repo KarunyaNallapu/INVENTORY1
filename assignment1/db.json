@@ -1,0 +1,132 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Inventory1: 2001",
+      "description": "Description 4567",
+      "price": "876",
+      "stock": "23 units",
+      "status": "Delivered"
+    },
+    {
+      "id": 2,
+      "name": "Inventory2: 2002",
+      "description": "Description 765",
+      "price": "23",
+      "stock": "8 units",
+      "status": "Pending"
+    },
+    {
+      "id": 3,
+      "name": "Inventory3: 2003",
+      "description": "Description 65432",
+      "price": "5678",
+      "stock": "54 units",
+      "status": "Processing"
+    },
+    {
+      "id": 4,
+      "name": "Inventory4: 2004",
+      "description": "Description 89765",
+      "price": "8765",
+      "stock": "32 units",
+      "status": "Delivered"
+    },
+    {
+      "id": 5,
+      "name": "Inventory5: 2005",
+      "description": "Description 435678",
+      "price": "7654345",
+      "stock": "0 units",
+      "status": "Out of Stock"
+    },
+    {
+      "id": 6,
+      "name": "Inventory6: 2006",
+      "description": "Description 987654",
+      "price": "12345",
+      "stock": "65 units",
+      "status": "Pending"
+    },
+    {
+      "id": 7,
+      "name": "Inventory7: 2007",
+      "description": "Description 98765",
+      "price": "65434",
+      "stock": "54 units",
+      "status": "deliverd"
+    },
+    {
+      "id": 8,
+      "name": "Inventory8: 2008",
+      "description": "Description 8u765",
+      "price": "5676",
+      "stock": "09 units",
+      "status": "Processing"
+    },
+    {
+      "id": 9,
+      "name": "Inventory9: 2009",
+      "description": "Description 876",
+      "price": "45676",
+      "stock": "65 units",
+      "status": "Finished"
+    },
+    {
+      "id": 10,
+      "name": "Inventory10: 2010",
+      "description": "Description 98765",
+      "price": "7654",
+      "stock": "65 units",
+      "status": "Pending"
+    },
+    {
+      "id": 11,
+      "name": "Inventory11: 2011",
+      "description": "Description 98765",
+      "price": "34567",
+      "stock": "32 units",
+      "status": "Undeliverable"
+    },
+    {
+      "id": 12,
+      "name": "Inventory12: 2012",
+      "description": "Description 8765",
+      "price": "543",
+      "stock": "8 units",
+      "status": "Processing"
+    },
+    {
+      "id": 13,
+      "name": "Inventory13: 2013",
+      "description": "Description 9876",
+      "price": "98765",
+      "stock": "76 units",
+      "status": "On Going"
+    },
+    {
+      "id": 14,
+      "name": "Inventory14: 2014",
+      "description": "Description 3293",
+      "price": "98765",
+      "stock": "31 units",
+      "status": "On Going"
+    },
+    {
+      "id": 15,
+      "name": "Inventory15: 2014",
+      "description": "Description 3299",
+      "price": "9",
+      "stock": "31 units",
+      "status": "On Going"
+    },
+    {
+      "id": "16",
+      "name": "",
+      "description": "",
+      "price": "",
+      "stock": "",
+      "status": ""
+    }
+  ]
+}
